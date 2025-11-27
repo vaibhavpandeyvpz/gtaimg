@@ -65,4 +65,10 @@ jobs:
         path: ./nupkg/*.nupkg
 
     - name: Publish to NuGet
-      run: dotnet nuget push ./nupkg/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
+      shell: pwsh
+      run: |
+        $packages = Get-ChildItem -Path ./nupkg -Filter *.nupkg
+        foreach ($package in $packages) {
+          Write-Host "Pushing $($package.FullName)"
+          dotnet nuget push $package.FullName --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
+        }

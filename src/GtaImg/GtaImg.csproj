@@ -12,6 +12,9 @@
     <Description>A library for reading and manipulating IMG archive files from GTA games (GTA3, Vice City, San Andreas).</Description>
     <PackageTags>GTA;IMG;archive;modding;games</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/vaibhavpandeyvpz/gtaimg</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/vaibhavpandeyvpz/gtaimg</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -22,5 +25,9 @@
   <PropertyGroup Condition="'$(TargetFramework)' == 'net6.0' Or '$(TargetFramework)' == 'net7.0' Or '$(TargetFramework)' == 'net8.0' Or '$(TargetFramework)' == 'net9.0' Or '$(TargetFramework)' == 'net10.0'">
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
 </Project>
