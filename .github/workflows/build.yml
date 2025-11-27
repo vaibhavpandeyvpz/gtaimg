@@ -30,8 +30,8 @@ jobs:
     - name: Build Library
       run: dotnet build src/GtaImg/GtaImg.csproj --configuration Release --no-restore
 
-    - name: Build Tool
-      run: dotnet build src/GtaImgTool/GtaImgTool.csproj --configuration Release --no-restore
-
     - name: Test
       run: dotnet test --configuration Release --no-build --verbosity normal
+
+    - name: Build Tool
+      run: dotnet build src/GtaImgTool/GtaImgTool.csproj --configuration Release --no-restore
