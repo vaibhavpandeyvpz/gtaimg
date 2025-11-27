@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/logo.png" alt="GTA IMG Tool" width="128">
-</p>
-
 # GtaImg - C# Library for GTA IMG Archives
 
 [![Build and Test](https://github.com/vaibhavpandeyvpz/GtaImg/actions/workflows/build.yml/badge.svg)](https://github.com/vaibhavpandeyvpz/GtaImg/actions/workflows/build.yml)
