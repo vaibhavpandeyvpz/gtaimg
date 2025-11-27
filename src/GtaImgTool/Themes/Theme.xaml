@@ -34,12 +34,25 @@
     <SolidColorBrush x:Key="WarningBrush" Color="{StaticResource WarningColor}" />
     <SolidColorBrush x:Key="ErrorBrush" Color="{StaticResource ErrorColor}" />
 
+    <!-- Font Family -->
+    <FontFamily x:Key="NotoSans">pack://application:,,,/Fonts/#Noto Sans</FontFamily>
+
     <!-- Window Style -->
     <Style x:Key="MainWindowStyle" TargetType="Window">
         <Setter Property="Background" Value="{StaticResource PrimaryBrush}" />
         <Setter Property="Foreground" Value="{StaticResource TextPrimaryBrush}" />
-        <Setter Property="FontFamily" Value="Segoe UI" />
+        <Setter Property="FontFamily" Value="{StaticResource NotoSans}" />
         <Setter Property="FontSize" Value="13" />
+    </Style>
+
+    <!-- Default TextBlock Style -->
+    <Style TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{StaticResource NotoSans}" />
+    </Style>
+
+    <!-- Default TextBox Style Base -->
+    <Style x:Key="BaseTextBoxStyle" TargetType="TextBox">
+        <Setter Property="FontFamily" Value="{StaticResource NotoSans}" />
     </Style>
 
     <!-- Button Style -->

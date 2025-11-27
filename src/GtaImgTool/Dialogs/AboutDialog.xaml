@@ -3,13 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:fa="http://schemas.fontawesome.io/icons/"
         Title="About GTA IMG Tool"
-        Width="400" Height="380"
+        Width="400" Height="460"
         WindowStartupLocation="CenterOwner"
         ResizeMode="NoResize"
         ShowInTaskbar="False"
         WindowStyle="None"
         AllowsTransparency="True"
-        Background="Transparent">
+        Background="Transparent"
+        FontFamily="{StaticResource NotoSans}">
     
     <Window.Resources>
         <Style x:Key="LinkButton" TargetType="Button">
@@ -76,11 +77,21 @@
             </Border>
 
             <!-- Content -->
-            <StackPanel Grid.Row="1" Margin="24,20" HorizontalAlignment="Center">
+            <StackPanel Grid.Row="1" Margin="24,20" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="GTA IMG Tool" FontSize="22" FontWeight="Bold" 
                            Foreground="#f6f6f5" HorizontalAlignment="Center" />
                 <TextBlock Text="Version 1.0.0" FontSize="12" 
-                           Foreground="#6d6e70" HorizontalAlignment="Center" Margin="0,4,0,16" />
+                           Foreground="#6d6e70" HorizontalAlignment="Center" Margin="0,4,0,12" />
+                
+                <!-- Game Logos -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,16">
+                    <Image Source="pack://application:,,,/gta3.png" Width="48" Height="48" Margin="8,0" 
+                           RenderOptions.BitmapScalingMode="HighQuality" />
+                    <Image Source="pack://application:,,,/gtavc.png" Width="48" Height="48" Margin="8,0" 
+                           RenderOptions.BitmapScalingMode="HighQuality" />
+                    <Image Source="pack://application:,,,/gtasa.png" Width="48" Height="48" Margin="8,0" 
+                           RenderOptions.BitmapScalingMode="HighQuality" />
+                </StackPanel>
                 
                 <!-- Description -->
                 <TextBlock Text="A tool for viewing and editing GTA IMG archive files." 
@@ -102,6 +113,11 @@
                     <Button Content="Email" Margin="0,0,8,0" Click="Email_Click" Style="{StaticResource LinkButton}" />
                     <Button Content="Support" Click="Support_Click" Style="{StaticResource LinkButton}" />
                 </StackPanel>
+                
+                <!-- Disclaimer -->
+                <TextBlock Text="All names and logos are property of their respective owners and are used for illustration purposes only." 
+                           FontSize="10" Foreground="#6d6e70" HorizontalAlignment="Center" 
+                           TextWrapping="Wrap" TextAlignment="Center" Margin="0,16,0,0" />
             </StackPanel>
 
             <!-- Footer -->

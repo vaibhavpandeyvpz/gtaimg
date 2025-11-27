@@ -25,6 +25,12 @@
 
   <ItemGroup>
     <Resource Include="icon.ico" />
+    <Resource Include="gta3.png" />
+    <Resource Include="gtavc.png" />
+    <Resource Include="gtasa.png" />
+    <Resource Include="Fonts\NotoSans-Regular.ttf" />
+    <Resource Include="Fonts\NotoSans-Bold.ttf" />
+    <Resource Include="Fonts\NotoSans-SemiBold.ttf" />
   </ItemGroup>
 
 </Project>

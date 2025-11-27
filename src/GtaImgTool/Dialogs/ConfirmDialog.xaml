@@ -9,7 +9,8 @@
         ShowInTaskbar="False"
         WindowStyle="None"
         AllowsTransparency="True"
-        Background="Transparent">
+        Background="Transparent"
+        FontFamily="{StaticResource NotoSans}">
     
     <Border Background="#111111" BorderBrush="#000000" BorderThickness="1" CornerRadius="0">
         <Border.Effect>
