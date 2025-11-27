@@ -1,7 +1,7 @@
 # GTA IMG Tool
 
-[![Build and Test](https://github.com/vaibhavpandeyvpz/GtaImg/actions/workflows/build.yml/badge.svg)](https://github.com/vaibhavpandeyvpz/GtaImg/actions/workflows/build.yml)
-[![GitHub Release](https://img.shields.io/github/v/release/vaibhavpandeyvpz/GtaImg)](https://github.com/vaibhavpandeyvpz/GtaImg/releases/latest)
+[![Build and Test](https://github.com/vaibhavpandeyvpz/gtaimg/actions/workflows/build.yml/badge.svg)](https://github.com/vaibhavpandeyvpz/gtaimg/actions/workflows/build.yml)
+[![GitHub Release](https://img.shields.io/github/v/release/vaibhavpandeyvpz/gtaimg)](https://github.com/vaibhavpandeyvpz/gtaimg/releases/latest)
 
 A modern Windows application for viewing and editing IMG archive files from classic GTA games (GTA III, Vice City, San Andreas).
 
@@ -9,7 +9,7 @@ A modern Windows application for viewing and editing IMG archive files from clas
 
 ## Download
 
-Get the latest release from the [Releases](https://github.com/vaibhavpandeyvpz/GtaImg/releases/latest) page.
+Get the latest release from the [Releases](https://github.com/vaibhavpandeyvpz/gtaimg/releases/latest) page.
 
 ## Features
 
@@ -187,7 +187,7 @@ Console.WriteLine($"Archive version: {archive.Version}");
 
 ```bash
 # Clone the repository
-git clone https://github.com/vaibhavpandeyvpz/GtaImg.git
+git clone https://github.com/vaibhavpandeyvpz/gtaimg.git
 cd GtaImg
 
 # Build everything
